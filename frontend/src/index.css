@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.empty_text {
+    -webkit-text-stroke: 1px black;
+}
+
+.neumorphism {
+    background: #e6e9f3; /* Light background color to match the surrounding div */
+    border-radius: 0.5rem; /* Matches your rounded-lg */
+    box-shadow: 
+      8px 8px 15px rgba(0, 0, 0, 0.1), /* Outer shadow for the lifted effect */
+      -8px -8px 15px rgba(255, 255, 255, 0.7); /* Inner highlight for the lifted effect */
+    transition: box-shadow 0.3s ease;
+  }
+
+
+  .neumorphism-card {
+    background: #e6e9f3;
+    border-radius: 1rem; /* Rounded corners */
+    box-shadow: 
+      10px 10px 20px rgba(0, 0, 0, 0.1), /* Outer shadow */
+      -10px -10px 20px rgba(255, 255, 255, 0.9); /* Inner highlight */
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .neumorphism-card:hover {
+    box-shadow: 
+      8px 8px 16px rgba(0, 0, 0, 0.15),
+      -8px -8px 16px rgba(255, 255, 255, 0.85);
+  }
+  
+  .neumorphism-card:active {
+    box-shadow: 
+      6px 6px 12px rgba(0, 0, 0, 0.2),
+      -6px -6px 12px rgba(255, 255, 255, 0.9);
+  }
+
+  .icon {
+    width: 3rem; /* Icon size */
+    height: 3rem; /* Icon size */
+  }
