@@ -30,7 +30,7 @@ const TeacherList = () => {
 
         setTeachers(response?.data);
       } catch (error) {
-        setError(error.message);
+        toast.error(error.message || "Server Error");
       } finally {
         setLoading(false);
       }
@@ -65,7 +65,7 @@ const TeacherList = () => {
       toast.success("User added successfully!");
       setOpen(false);
     } catch (err) {
-      console.log(err)
+      console.log(err);
       toast.error(
         err?.response?.data?.message || err.message || "Server Error !"
       );
